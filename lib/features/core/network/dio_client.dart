@@ -1,7 +1,9 @@
 import 'package:dio/dio.dart';
 
-final Dio dio = Dio();
-
-void CreateDio() {
-  dio.options.baseUrl = 'https://dummyjson.com/';
-}
+Dio createDio() => Dio(
+  BaseOptions(
+    baseUrl: 'https://dummyjson.com/',
+    connectTimeout: const Duration(seconds: 30),
+    receiveTimeout: const Duration(seconds: 30),
+  ),
+);
