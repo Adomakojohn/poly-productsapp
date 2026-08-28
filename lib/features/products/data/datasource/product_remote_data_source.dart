@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:products_app/features/core/error/failure.dart';
+import 'package:products_app/core/error/failure.dart';
 import 'package:products_app/features/products/data/models/product_model.dart';
 
 class ProductRemoteDataSource {
